@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto Mono', monospace;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #000;
+  padding: 10px;
+}
+
+.box {
+  width: 350px;
+  height: 400px;
+  background: white;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+.box .fields {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  gap: 2rem;
+}
+
+.box .fields > input {
+  padding: 5px;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.655);
+}
+
+.box .fields > button {
+  padding: 8px;
+  background: #00aaff;
+  border-radius: 15px;
+  border: none;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.box .fields > p {
+  font-size: 12px;
+  text-align: center;
+}
+
+.heading h1 {
+  text-align: center;
+  padding: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.signup {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: translate(0%, 85%);
+}
+
+.signup .heading {
+  background: #00aaff;
+  border-radius: 100% 100% 0 0;
+  cursor: pointer;
+}
+
+.signup .fields {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  gap: 1.7rem;
+}
+
+.signup .fields > input {
+  padding: 5px !important;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.655);
+  background: transparent;
+  color: white;
+}
+
+.signup .fields > input::placeholder {
+  color: black;
+}
+
+.box .signup .fields > button {
+  padding: 8px;
+  background: white;
+  border-radius: 15px;
+  border: none;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.box .signup .fields > p {
+  font-size: 12px;
+  text-align: center;
+}
+
+.fields > p > span {
+  text-decoration: underline;
+  cursor: pointer;
+}
